@@ -47,14 +47,7 @@ headerImg.setAttribute('src', siteContent["cta"]["img-src"]);
 let middleImg = document.getElementById("middle-img");
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
-/*
-document.querySelector('a').textContent = siteContent.nav["nav-item-1"];
 
-document.querySelector('a:nth-of-type(2)').textContent = siteContent.nav["nav-item-2"]
-document.querySelector('a:nth-of-type(3)').textContent = siteContent.nav["nav-item-3"]
-document.querySelector('a:nth-of-type(4)').textContent = siteContent.nav["nav-item-4"]
-document.querySelector('a:nth-of-type(5)').textContent = siteContent.nav["nav-item-5"]
-document.querySelector('a:nth-of-type(6)').textContent = siteContent.nav["nav-item-6"]*/
 
 let navBar = document.querySelectorAll('a');
 navBar[0].textContent = siteContent['nav']['nav-item-1'];
@@ -77,8 +70,20 @@ parentElement.append(newNavTwo);
 parentElement.prepend(newNav);
 
 
-document.querySelector('h1').textContent = siteContent.cta["h1"]
+
+document.querySelector('h1').innerHTML =
+"DOM" + "<br>" + "Is" + "<br>" + "Awesome";
 document.querySelector('button').textContent = siteContent.cta['button']
+
+document.querySelector('footer').innerHTML =
+"123 Way 456 Street" + "<br>"+ "Somewhere, USA" + "<br>" + "1 (888) 888-8888" + "<br>"+
+"sales@greatidea.io";
+ 
+document.querySelector('footer').style.textAlign = "left";
+
+
+
+
 
 navBar.forEach( element => {
   element.style.color = "green"; 
@@ -99,9 +104,8 @@ mainPara[1].textContent = siteContent['main-content']['about-content'];
 mainPara[2].textContent = siteContent['main-content']['services-content'];
 mainPara[3].textContent = siteContent['main-content']['product-content'];
 mainPara[4].textContent = siteContent['main-content']['vision-content'];
-mainPara[5].textContent = siteContent['contact']['address'];
-mainPara[6].textContent = siteContent['contact']['phone'];
-mainPara[7].textContent = siteContent['contact']['email'];
-mainPara[8].textContent = siteContent['footer']['copyright'];
-
+//mainPara[5].textContent = siteContent['contact']['address'];
+//mainPara[6].textContent = siteContent['contact']['phone'];
+//mainPara[7].textContent = siteContent['contact']['email'];
+//mainPara[8].textContent = siteContent['footer']['copyright'];
 
